@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/tv_ipaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_margin="2dp"
+            android:text="@string/IP"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/Ipadr"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:autofillHints="IP and Port"
+            android:hint="@string/ip_and_port"
+
+            android:inputType="textCapWords" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="0dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_margin="2dp"
+            android:text="@string/port"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:autofillHints="Port"
+            android:hint="@string/port_"
+
+            android:inputType="textCapWords" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_margin="2dp"
+            android:text="@string/ss_id"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/ssid"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:autofillHints="Enter SS Id"
+            android:hint="@string/enter_ss_id" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_margin="2dp"
+            android:text="@string/password"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/pswrd"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:autofillHints="Enter SS Id"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_margin="2dp"
+            android:text="@string/encryption"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/ID_encryption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="50dp"
+            android:minHeight="50dp">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_margin="2dp"
+            android:text="@string/authentication"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+        <Spinner
+            android:id="@+id/ID_Authentication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="50dp"
+            android:minHeight="50dp">
+
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="193dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/send"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>

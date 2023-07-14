@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">testingokhttp</string>
+    <string name="ssid">SSID</string>
+    <string name="enter_ss_id">Enter SS Id</string>
+    <string name="ss_id">SS Id :</string>
+    <string name="password">Password  :</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="encryption">encryption :</string>
+    <string name="authentication">Authentication  :</string>
+    <string name="IP"><![CDATA[IP Address :]]></string>
+    <string name="ip_and_port">IP Address</string>
+    <string name="send">send</string>
+    <string name="port">Port :</string>
+    <string name="port_">Port</string>
+</resources>

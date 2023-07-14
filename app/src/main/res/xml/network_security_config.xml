@@ -1,0 +1,9 @@
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <!-- Add any necessary trust anchors for your server -->
+            <!-- Example: Allow connections to a specific IP address -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
